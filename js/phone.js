@@ -1,3 +1,4 @@
+// Load the phone elements from another website using API fetch
 const loadPhone = async(searchText) => {
     const res =await fetch(`https://openapi.programming-hero.com/api/phones?search=${searchText}`);
     const data = await res.json();
@@ -5,6 +6,7 @@ const loadPhone = async(searchText) => {
     displayPhones(phones);
 }
 
+// Display the phone elements to the UI
 const displayPhones = phones => {
     // To show elements on display follow the 4 steps below
     // step-1: get the element where you want to set the new elements
