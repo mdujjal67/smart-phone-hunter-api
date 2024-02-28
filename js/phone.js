@@ -75,7 +75,7 @@ const showPhoneDetails = (phone) => {
     <p><span class="font-bold">Chipset: </span>${phone?.mainFeatures?.chipSet}</p>
     <p><span class="font-bold">Memory: </span>${phone?.slug}</p>
     <p><span class="font-bold">Release Date: </span>${phone?.mainFeatures?.releaseDate}</p>
-    <p><span class="font-bold">GPS: </span>${phone?.others.GPS}</p>
+    <p><span class="font-bold">GPS: </span>${phone?.others?.GPS || 'No GPS available'}</p>
 
 
     
